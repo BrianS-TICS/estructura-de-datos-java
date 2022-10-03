@@ -27,4 +27,8 @@ public class Cola <T> {
         // Crear un nuevo elemento
 
     }
+
+    public void mostrarCola(){
+    // Metodo que retorne todos los elementos
+    }
 }

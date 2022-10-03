@@ -23,7 +23,7 @@ public class Nodo<T>{
     public Nodo<T> getSiguiente() {
         return siguiente;
     }
-    //modifica el atributo siguiente
+    //modifica el atributo siguientel
     public void setSiguiente(Nodo<T> siguiente) {
         this.siguiente = siguiente;
     }
