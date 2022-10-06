@@ -3,7 +3,7 @@ package EjercicioPilas;
 public class Delimitadores {
 
     //Evalua si una cadena tiene los delimitadores correctos
-    public  boolean     evaluacionDelimitadores(String cadena) {
+    public  boolean evaluacionDelimitadores(String cadena) {
         Pila<String> pcaracteres = new Pila<String>();
 
         int i = 0;
