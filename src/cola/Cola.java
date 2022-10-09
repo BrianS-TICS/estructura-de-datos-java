@@ -1,5 +1,4 @@
 package cola;
-import java.util.*;
 
 public class Cola <T> {
     // Atributo cabeza

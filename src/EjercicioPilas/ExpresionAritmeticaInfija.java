@@ -2,7 +2,6 @@ package EjercicioPilas;
 
 public class ExpresionAritmeticaInfija {
     Pila<String> pOperadores = new Pila<String>();
-
     char operadores[] =          {'^','*','/','+','-','('};
     byte prioridadDentroPila[] = {3,   2,  2,  1,  1,  0};
     //byte prioridadFueraPila[] =  {3,   2,  2,  1,  1,  4};
