@@ -1,10 +1,10 @@
-package listas;
+package Colas;
 
 public class Nodo <T> {
     // Atributo valor tipo T que almacena la referencia al objeto que guarda en el nodo
 
     private T valor;
-    cola.Nodo<T> siguiente;
+    Nodo <T> siguiente;
 
     public Nodo(){
         valor = null;
@@ -19,11 +19,11 @@ public class Nodo <T> {
         this.valor = valor;
     }
 
-    public cola.Nodo<T> getSiguiente() {
+    public Nodo<T> getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(cola.Nodo<T> siguiente) {
+    public void setSiguiente(Nodo<T> siguiente) {
         this.siguiente = siguiente;
     }
 }

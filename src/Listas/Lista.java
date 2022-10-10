@@ -1,21 +1,41 @@
-package listas;
+package Listas;
 public class Lista<T> {
+    //primer elemento de la lista
     private Nodo<T> cabeza;
+    //Total de elementos de la lista
     private int tamanio;
-    public Lista(){
-        cabeza = null;
+    //constructor por defecto
+    public Lista() {
+        cabeza=null;
         tamanio=0;
     }
-    public int getTamanio(){
+    public int getTamanio() {
         return tamanio;
     }
-    public boolean esVacio(){
+    public boolean esVacia() {
         if(cabeza==null)
             return true;
         else
             return false;
     }
-
+    //Agregar un nuevo nodo al final de la lista
+    public void agregar(T valor) {
+        Nodo<T> nuevo = new Nodo<T>();
+        nuevo.setValor(valor);
+        if (esVacia()) {
+            cabeza=nuevo;
+        }
+        else {
+            //agregar al final de la lista
+            Nodo<T> aux =cabeza;
+            while (aux.getSiguiente() != null)
+            {
+                aux = aux.getSiguiente();
+            }
+            aux.setSiguiente(nuevo);
+        }
+        tamanio++;
+    }
     public void insertar(T valor,int pos) throws
             PosicionIlegalException{
         if (pos>=0 && pos<=tamanio) {
@@ -105,5 +125,6 @@ public class Lista<T> {
         }
     }
 
+
+
 }
-//

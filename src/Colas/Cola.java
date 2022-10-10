@@ -1,4 +1,4 @@
-package cola;
+package Colas;
 
 public class Cola <T> {
     // Atributo cabeza

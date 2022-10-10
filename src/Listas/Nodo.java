@@ -1,21 +1,21 @@
-package EjercicioPilas;
+package Listas;
 
-public class Nodo<T>{
-    //Atributo valor de tipo T. Almacena la referencia al objeto
-    //  que se guarda en el nodo
+public class Nodo<T> {
+    //Atributo valor de tipo T.Almacena la referencia al objeto
+    //que guarda en el nodo
     private T valor;
-    //Referencia al siguiente nodo enlazado
-    private Nodo<T> siguiente;
-    //constructor por defecto
+    //referencia al siguiente nodo enlazado
+    Nodo<T> siguiente;
+    //Constructor por defecto
     public Nodo() {
-        valor=null;
+        valor = null;
         siguiente = null;
     }
-    //devuelve el valor
+    //Devuelve el valor
     public T getValor() {
         return valor;
     }
-    //modifica el valor
+    //Modifica el alor
     public void setValor(T valor) {
         this.valor = valor;
     }
@@ -23,8 +23,10 @@ public class Nodo<T>{
     public Nodo<T> getSiguiente() {
         return siguiente;
     }
-    //modifica el atributo siguiente
+    //modifica el atributo siguientr
     public void setSiguiente(Nodo<T> siguiente) {
         this.siguiente = siguiente;
     }
+
+
 }
