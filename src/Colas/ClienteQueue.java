@@ -1,4 +1,4 @@
-package cola;
+package Colas;
 import java.util.Queue;
 import java.util.LinkedList;
 // EJEMPLO DE USO DE LA INTERFACE QUEUE

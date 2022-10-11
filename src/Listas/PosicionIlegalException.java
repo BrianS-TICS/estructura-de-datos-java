@@ -1,4 +1,4 @@
-package listas;
+package Listas;
 
 public class PosicionIlegalException extends Exception{
     public PosicionIlegalException(){
