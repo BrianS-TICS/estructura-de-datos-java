@@ -93,8 +93,12 @@ public class ListaCircular<T> {
         {
             if (pos==0) {
                 //el nodo a eliminar esta en la primera posicion
+                Nodo<T> ultimo = cabeza;
+                while (ultimo.getSiguiente() != cabeza){
+                    ultimo = ultimo.getSiguiente();
+                }
                 cabeza = cabeza.getSiguiente();
-                tamanio--;
+                ultimo.setSiguiente(cabeza);
             }
             else
             {
@@ -107,6 +111,7 @@ public class ListaCircular<T> {
                 aux.setSiguiente(prox.getSiguiente());
                 tamanio--;
             }
+            tamanio--;
         }
         else
         {
