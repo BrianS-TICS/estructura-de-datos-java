@@ -12,8 +12,8 @@ public class TestHashtable {
 
         // Agregar a persona en la tabla
         tabla.put(p1.getNombre(),p1);
-        tabla.put(p2.getNombre()),p2;
-        tabla.put(p3.getNombre()),p3;
+        //tabla.put(p2.getNombre()),p2;
+        //tabla.put(p3.getNombre()),p3;
 
         // Acceso a cada elemento
         System.out.println(tabla.get("Pablo"));

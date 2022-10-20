@@ -17,7 +17,7 @@ public class ListaDoblementeEnlazada<T> {
     }
     public boolean esVacia() {
         return (cabeza==null);
-    }.
+    }
     //Agrega un nuevo nodo al final de la lista
     public void agregar(T valor) {
 
