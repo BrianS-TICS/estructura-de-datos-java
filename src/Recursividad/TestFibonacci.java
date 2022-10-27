@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 public class TestFibonacci {
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Ingresa un valor");
-        int valor = leer.nextInt();
+        //ingreso datos
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("ingrese un valor:");
+        int n=scanner.nextInt();
+        //invoco función recursiva
         Fibonacci fib = new Fibonacci();
-        double f = fib.fibonacciRec(n);
-        System.out.println("Resultado " + n + " es " + f);
-        leer.close();
+        double f= fib.fibonacciRec(n);
+        //muestro resultado
+        System.out.println("El termino "+n+" es: "+f);
+        scanner.close();
     }
 }
